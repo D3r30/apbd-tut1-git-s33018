@@ -15,7 +15,7 @@ public class StatisticsHelper{
         foreach (var v in values) sum += v;
         return (double)sum / values.Length;
     }
-    
+        
     public static string IsOddOrEven(int number)
     {
         return number % 2 == 0 ? "Even" : "Odd";
