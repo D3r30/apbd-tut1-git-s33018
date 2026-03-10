@@ -17,6 +17,11 @@ public class StatisticsHelper{
         return (double)sum / values.Length;
     }
     
+    public static int CalculateMin(int[] values)
+    {
+        return 0;
+    }
+    
     public static int CalculateMax(int[] values)
     {
         int max = values[0];
