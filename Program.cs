@@ -1,5 +1,12 @@
-﻿Console.WriteLine(StatisticsHelper.IsOddOrEven(4));
-Console.WriteLine(StatisticsHelper.IsOddOrEven(7));
+﻿string input = Console.ReadLine();
+if (int.TryParse(input, out int number))
+{
+    Console.WriteLine(StatisticsHelper.IsOddOrEven(number));
+}
+else
+{
+    Console.WriteLine("Error: please enter a valid number.");
+}
 public class StatisticsHelper
 {
     public static string IsOddOrEven(int number)
