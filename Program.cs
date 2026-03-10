@@ -16,7 +16,14 @@ public class StatisticsHelper{
         foreach (var v in values) sum += v;
         return (double)sum / values.Length;
     }
-        
+    
+    public static int CalculateMax(int[] values)
+    {
+        int max = values[0];
+        foreach (var v in values) if (v > max) max = v;
+        return max;
+    }
+    
     public static string IsOddOrEven(int number)
     {
         return number % 2 == 0 ? "Even" : "Odd";
