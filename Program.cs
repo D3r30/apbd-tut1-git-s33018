@@ -7,8 +7,15 @@ else
 {
     Console.WriteLine("Error: please enter a valid number.");
 }
-public class StatisticsHelper
-{
+public class StatisticsHelper{
+
+    public static double CalculateAverage(int[] values)
+    {
+        int sum = 0;
+        foreach (var v in values) sum += v;
+        return (double)sum / values.Length;
+    }
+    
     public static string IsOddOrEven(int number)
     {
         return number % 2 == 0 ? "Even" : "Odd";
