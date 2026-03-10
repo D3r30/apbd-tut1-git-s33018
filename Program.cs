@@ -6,7 +6,7 @@ if (int.TryParse(input, out int number))
 }
 else
 {
-    Console.WriteLine("Error: please enter a valid number.");
+    Console.WriteLine("Error: invalid input");
 }
 public class StatisticsHelper{
 
